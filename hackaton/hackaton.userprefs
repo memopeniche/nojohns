@@ -1,1 +1,14 @@
-﻿<Properties StartupItem="hackaton\hackaton.csproj" />
+﻿<Properties StartupItem="hackaton\hackaton.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.a10f33aa" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="hackaton\MainActivity.cs">
+    <Files>
+      <File FileName="hackaton\MainActivity.cs" Line="26" Column="26" />
+      <File FileName="hackaton\LogIn.cs" Line="43" Column="43" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.hackaton AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>

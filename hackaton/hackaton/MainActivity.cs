@@ -9,25 +9,23 @@ using Android.OS;
 
 namespace hackaton
 {
+
 	[Activity (Label = "hackaton", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity
 	{
-		int count = 1;
-
+		public bool IsLogIn = false;
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 
 			// Set our view from the "main" layout resource
+			//SetContentView (Resource.Layout.Main);
 			SetContentView (Resource.Layout.Main);
-
-			// Get our button from the layout resource,
-			// and attach an event to it
-			Button button = FindViewById<Button> (Resource.Id.myButton);
-			
-			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks!", count++);
-			};
+			if (!IsLogIn) {
+				StartActivity(typeof(LogIn));
+			} else {
+				//SetContentView (Resource.Layout.Main);
+			}
 		}
 	}
 }
