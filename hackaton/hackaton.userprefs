@@ -1,10 +1,20 @@
 ﻿<Properties StartupItem="hackaton\hackaton.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.a10f33aa" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="hackaton\MainActivity.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="hackaton\MySqlClass.cs">
     <Files>
-      <File FileName="hackaton\MainActivity.cs" Line="26" Column="26" />
-      <File FileName="hackaton\LogIn.cs" Line="43" Column="43" />
+      <File FileName="hackaton\UserClass.cs" Line="1" Column="1" />
+      <File FileName="hackaton\LogIn.cs" Line="1" Column="1" />
+      <File FileName="hackaton\MySqlClass.cs" Line="30" Column="30" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="hackaton" expanded="True">
+            <Node name="References" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
