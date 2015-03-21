@@ -60,21 +60,11 @@
         android:layout_marginTop="30dp"
         android:layout_marginLeft="30dp"
         android:id="@+id/id" />
-    <TextView
-        android:text="Comentarios Recientes"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="fill_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/id"
-        android:layout_marginTop="15dp"
-        android:id="@+id/comentarios_recientes" />
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="wrap_content"
         android:layout_height="264.7dp"
-        android:layout_below="@id/comentarios_recientes"
         android:layout_marginTop="30dp"
         android:id="@+id/lista_comentarios" />
     <Button
@@ -84,4 +74,12 @@
         android:layout_below="@id/lista_comentarios"
         android:layout_gravity="center"
         android:id="@+id/button1" />
+    <Button
+        android:text="Comentarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id"
+        android:id="@+id/comentarios"
+        android:layout_marginTop="39.8dp"
+        android:layout_marginLeft="133.7dp" />
 </RelativeLayout>
