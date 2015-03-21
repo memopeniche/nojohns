@@ -17,6 +17,7 @@ namespace hackaton
 			user = u;
 			password = pass;
 			id = code;
+			//nothing
 		}
 
 	}

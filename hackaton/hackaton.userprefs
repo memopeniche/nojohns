@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="hackaton\hackaton.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.47901e97b73c30ec" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="hackaton\UserClass.cs">
     <Files>
-      <File FileName="hackaton\UserClass.cs" Line="1" Column="1" />
+      <File FileName="hackaton\UserClass.cs" Line="13" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
