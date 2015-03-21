@@ -17,7 +17,11 @@ public final class R {
     public static final class id {
         public static final int apellido=0x7f060008;
         public static final int button1=0x7f060003;
+        public static final int comentarios_recientes=0x7f06000d;
         public static final int correo=0x7f06000a;
+        public static final int direccion=0x7f06000b;
+        public static final int id=0x7f06000c;
+        public static final int lista_comentarios=0x7f06000e;
         public static final int login=0x7f060002;
         public static final int nombre=0x7f060007;
         public static final int nombre1=0x7f060004;

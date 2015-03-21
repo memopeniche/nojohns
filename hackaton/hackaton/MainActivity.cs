@@ -15,6 +15,7 @@ namespace hackaton
 	public class MainActivity : Activity
 	{
 		int count =1;
+		bool IsLogIn = false;
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -55,8 +56,30 @@ namespace hackaton
 			Button boton = FindViewById<Button> (Resource.Id.user);
 			TextView nombre = FindViewById<TextView> (Resource.Id.nombre1);
 			boton.Click += delegate {
-				nombre.Text = Usuarios[0].name;
+
+				SetContentView(Resource.Layout.Login_Screen);
+				//break;
+				Button log = FindViewById<Button>(Resource.Id.login);
+				log.Click += delegate {
+					EditText usuario = FindViewById<EditText> (Resource.Id.username);
+					EditText pass = FindViewById<EditText> (Resource.Id.password);
+					foreach (var i in Usuarios) {
+						if (i.user == usuario.Text) {
+							if (i.password == pass.Text) {
+								SetContentView(Resource.Layout.User_Profile);
+								TextView name = FindViewById<TextView>(Resource.Id.nombre);
+								name.Text = i.name;
+								TextView lname = FindViewById<TextView>(Resource.Id.apellido);
+								lname.Text = i.lname;
+
+							}
+						}
+					}
+				};
+
+
 			};
+
 		}
 	}
 }
