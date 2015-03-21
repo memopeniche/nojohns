@@ -54,6 +54,8 @@
     <Compile Include="ProfileActivity.cs" />
     <Compile Include="Feedback.cs" />
     <Compile Include="CommentsActivity.cs" />
+    <Compile Include="RequestActivity.cs" />
+    <Compile Include="Request_List.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -70,7 +72,7 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\layout\Login_Screen.axml" />
     <AndroidResource Include="Resources\layout\User_Profile.axml" />
-    <AndroidResource Include="Resources\layout\Comentarios.axml" />
+    <AndroidResource Include="Resources\layout\Request.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

@@ -19,4 +19,4 @@ C:\NoJohns\nojohns\hackaton\hackaton\obj\Debug\uploadflags.txt
 C:\NoJohns\nojohns\hackaton\hackaton\obj\Debug\hackaton.csprojResolveAssemblyReference.cache
 C:\NoJohns\nojohns\hackaton\hackaton\obj\Debug\res\layout\user_profile.xml
 C:\NoJohns\nojohns\hackaton\hackaton\bin\Debug\SQLite.dll
-C:\NoJohns\nojohns\hackaton\hackaton\obj\Debug\res\layout\comentarios.xml
+C:\NoJohns\nojohns\hackaton\hackaton\obj\Debug\res\layout\request.xml

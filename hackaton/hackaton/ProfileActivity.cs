@@ -28,6 +28,7 @@ namespace hackaton
 			TextView address = FindViewById<TextView> (Resource.Id.direccion);
 			TextView ida = FindViewById<TextView> (Resource.Id.id);
 			Button comments = FindViewById<Button> (Resource.Id.comentarios);
+			Button Request = FindViewById<Button> (Resource.Id.request);
 			var persona = Intent.Extras.GetStringArrayList ("usuario") ?? new string[0];
 			name.Text = persona[0];
 			lname.Text = persona [1];
@@ -40,6 +41,12 @@ namespace hackaton
 				aux.PutExtra("id", persona[7]);
 				StartActivity(aux);
 			};
+			Request.Click += delegate {
+				Intent intent = new Intent(this, typeof(RequestActivity));
+
+				StartActivity(intent);
+			};
+
 		}
 	}
 }
