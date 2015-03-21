@@ -6,8 +6,8 @@ namespace hackaton
 	{
 		//Parametros
 		public string name, lname, phone, mail, address, user, password;
-
-		public User (string n, string l, string p, string m, string a, string u, string pass)
+		int id;
+		public User (string n, string l, string p, string m, string a, string u, string pass, int code)
 		{
 			name = n;
 			lname = l;
@@ -16,6 +16,7 @@ namespace hackaton
 			address = a;
 			user = u;
 			password = pass;
+			id = code;
 		}
 
 	}
