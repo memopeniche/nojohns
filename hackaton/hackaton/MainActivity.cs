@@ -15,7 +15,6 @@ namespace hackaton
 	public class MainActivity : Activity
 	{
 		int count =1;
-		bool IsLogIn = false;
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -24,7 +23,7 @@ namespace hackaton
 				"eduardinio33340@gmail.com", "smz 46 mz 11", "eduardinio", "alonzo", count));
 			count++;
 			Usuarios.Add(new User("Pedro", "Gonzalez", "9982589674",
-				"pedro.gonzalez@gmail.com", "cancun Qroo", "pedro", "gonzalez", count));
+				"pedro.gonzalez@gmail.com", "cancun Qroo", "Username", "Password", count));
 			count++;
 			Usuarios.Add(new User("Luis", "Alonzo", "9982487459",
 				"luis.alonzo@gmail.com", "cancun Qroo", "luis", "alonzo", count));
@@ -52,32 +51,32 @@ namespace hackaton
 			count++;
 			// Set our view from the "main" layout resource
 			//SetContentView (Resource.Layout.Main);
-			SetContentView (Resource.Layout.Main);
-			Button boton = FindViewById<Button> (Resource.Id.user);
-			TextView nombre = FindViewById<TextView> (Resource.Id.nombre1);
-			boton.Click += delegate {
+			SetContentView (Resource.Layout.Login_Screen);
+			Button log = FindViewById<Button> (Resource.Id.login);
+			EditText user = FindViewById<EditText> (Resource.Id.username);
+			EditText pass = FindViewById<EditText> (Resource.Id.password);
+			log.Click += delegate {
+				foreach (var i in Usuarios) {
+					if (i.user == user.Text) {
+						if (i.password == pass.Text) {
+							List<string> persona = new List<string> ();
+							persona.Add (i.name);
+							persona.Add (i.lname);
+							persona.Add (i.phone);
+							persona.Add (i.mail);
+							persona.Add (i.address);
+							persona.Add (i.user);
+							persona.Add (i.password);
+							persona.Add (i.id.ToString ());
+							var aux = new Intent (this, typeof(ProfileActivity));
+							aux.PutStringArrayListExtra ("usuario", persona);
+							StartActivity (aux);
 
-				SetContentView(Resource.Layout.Login_Screen);
-				//break;
-				Button log = FindViewById<Button>(Resource.Id.login);
-				log.Click += delegate {
-					EditText usuario = FindViewById<EditText> (Resource.Id.username);
-					EditText pass = FindViewById<EditText> (Resource.Id.password);
-					foreach (var i in Usuarios) {
-						if (i.user == usuario.Text) {
-							if (i.password == pass.Text) {
-								var activity2 = new Intent (this, typeof(ProfileActivity));
-								activity2.PutExtra("MyData","Data from Activity1");
-								StartActivity(activity2);
-
-							}
 						}
+				
 					}
-				};
-
-
+				}
 			};
-
 		}
 	}
 }

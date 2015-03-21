@@ -1,3 +1,2 @@
 hackaton.MainActivity;hackaton.MainActivity
-hackaton.LogIn;hackaton.LogIn
 hackaton.ProfileActivity;hackaton.ProfileActivity
