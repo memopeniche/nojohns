@@ -18,6 +18,4 @@ C:\NoJohns\nojohns\hackaton\hackaton\obj\Debug\R.cs.flag
 C:\NoJohns\nojohns\hackaton\hackaton\obj\Debug\uploadflags.txt
 C:\NoJohns\nojohns\hackaton\hackaton\obj\Debug\hackaton.csprojResolveAssemblyReference.cache
 C:\NoJohns\nojohns\hackaton\hackaton\obj\Debug\res\layout\user_profile.xml
-C:\NoJohns\nojohns\hackaton\hackaton\bin\Debug\MySql.Data.Entity.EF5.dll
-C:\NoJohns\nojohns\hackaton\hackaton\bin\Debug\MySql.Data.Entity.EF6.dll
-C:\NoJohns\nojohns\hackaton\hackaton\bin\Debug\MySql.Fabric.Plugin.dll
+C:\NoJohns\nojohns\hackaton\hackaton\bin\Debug\SQLite.dll
