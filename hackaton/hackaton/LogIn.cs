@@ -20,7 +20,7 @@ namespace hackaton
 		{
 			base.OnCreate (bundle);
 			SetContentView (Resource.Layout.Login_Screen);
-			Button log = FindViewById<Button> (Resource.Id.login);
+			//Button log = FindViewById<Button> (Resource.Id.login);
 			/*log.Click += delegate {
 				//MainActivity.IsLogIn = true;
 				StartActivity(typeof(MainActivity));

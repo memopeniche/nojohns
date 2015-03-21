@@ -16,10 +16,10 @@ public final class R {
     }
     public static final class id {
         public static final int button1=0x7f060002;
-        public static final int button2=0x7f060004;
         public static final int editText1=0x7f060000;
         public static final int editText2=0x7f060001;
-        public static final int login=0x7f060003;
+        public static final int nombre1=0x7f060003;
+        public static final int user=0x7f060004;
     }
     public static final class layout {
         public static final int login_screen=0x7f030000;
