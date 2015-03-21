@@ -66,11 +66,9 @@ namespace hackaton
 					foreach (var i in Usuarios) {
 						if (i.user == usuario.Text) {
 							if (i.password == pass.Text) {
-								SetContentView(Resource.Layout.User_Profile);
-								TextView name = FindViewById<TextView>(Resource.Id.nombre);
-								name.Text = i.name;
-								TextView lname = FindViewById<TextView>(Resource.Id.apellido);
-								lname.Text = i.lname;
+								var activity2 = new Intent (this, typeof(ProfileActivity));
+								activity2.PutExtra("MyData","Data from Activity1");
+								StartActivity(activity2);
 
 							}
 						}

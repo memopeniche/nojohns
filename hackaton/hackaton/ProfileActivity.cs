@@ -19,8 +19,11 @@ namespace hackaton
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-
+			string text = Intent.GetStringExtra ("MyData") ?? "Data not available";
 			// Create your application here
+			SetContentView(Resource.Layout.User_Profile);
+			EditText name = FindViewById<EditText> (Resource.Id.nombre);
+			name.Text = text;
 		}
 	}
 }
